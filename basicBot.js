@@ -1591,6 +1591,7 @@
                     'has given you a cookie for Goris. Is he here? :minik:',
                     'gives you a fortune cookie. It reads "1v1 me for the boss of this gym."',
                     'gives you a cookie made of plebs. Cookie is still grey. :sadness:',
+                    'gives you a fortune cookie. It reads "Roses are red, Violets are blue, Sugar is sweet, AND HIS NAME IS JOHN CEEEENAAAAAAAAAAAAAA!!!" :swiftrage:',
                     'has given you a chocolate chip cookie!',
                     'has given you a soft homemade oatmeal cookie!',
                     'has given you a plain, dry, old cookie. It was the last one in the bag. Gross.',
@@ -1613,7 +1614,7 @@
                     'bakes you fresh cookies, it smells amazing.'
                 ],
                 getCookie: function () {
-                    var c = Math.floor(Math.random() * 4);
+                    var c = Math.floor(Math.random() * 5);
                     return this.cookies[c];
                 },
                 functionality: function (chat, cmd) {
