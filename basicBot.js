@@ -1587,8 +1587,11 @@
                 command: 'cookie',
                 rank: 'user',
                 type: 'startsWith',
-                cookies: ['has given you a chocolate chip cookie!',
-                    'is actually Van Darkholme and he asks you to stick your cookie in his ass :forsenddk: .',
+                cookies: ['is actually Van Darkholme and he asks you to stick your cookie in his ass. :forsenddk:',
+                    'has given you a cookie for Goris. Is he here? :minik:',
+                    'gives you a fortune cookie. It reads "1v1 me for the boss of this gym."',
+                    'gives you a cookie made of plebs. Cookie is still grey. :sadness:',
+                    'has given you a chocolate chip cookie!',
                     'has given you a soft homemade oatmeal cookie!',
                     'has given you a plain, dry, old cookie. It was the last one in the bag. Gross.',
                     'gives you a sugar cookie. What, no frosting and sprinkles? 0/10 would not touch.',
@@ -1610,8 +1613,7 @@
                     'bakes you fresh cookies, it smells amazing.'
                 ],
                 getCookie: function () {
-                    //var c = Math.floor(Math.random() * this.cookies.length);
-                    var c = 1;
+                    var c = Math.floor(Math.random() * 4);
                     return this.cookies[c];
                 },
                 functionality: function (chat, cmd) {
@@ -1631,9 +1633,9 @@
                             if (user === false || !user.inRoom) {
                                 return API.sendChat(subChat(basicBot.chat.nousercookie, {name: name}));
                             }
-                            //else if (user.username === chat.un) {
-                            //    return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
-                            //}
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
+                            }
                             else {
                                 return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
                             }
