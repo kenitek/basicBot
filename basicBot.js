@@ -1602,7 +1602,7 @@
                     'gives you a cookie. But your browser doesnt accept any.',
                 ],
                 getCookie: function () {
-                    var c = Math.floor(Math.random() * 5);
+                    var c = Math.floor(Math.random() * this.cookies.length);
                     return this.cookies[c];
                 },
                 functionality: function (chat, cmd) {
