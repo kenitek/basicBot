@@ -180,7 +180,7 @@
     var basicBot = {
         version: "2.1.4",
         status: false,
-        name: "basicBot",
+        name: "GrandrogueBot :forsenddk:",
         loggedInID: null,
         scriptLink: "https://rawgit.com/grandrogue/basicBot/master/basicBot.js",
         cmdLink: "http://git.io/245Ppg",
@@ -190,7 +190,7 @@
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "basicBot",
+            botName: "GrandrogueBot :forsenddk:",
             language: "english",
             chatLink: "https://rawgit.com/grandrogue/basicBot/master/lang/en.json",
             maximumAfk: 120,
