@@ -1599,6 +1599,7 @@
                     'gives you a cookie. It reads "1v1 me rust"',
                     'gives you a cookie. It got taken away by the Nazis :forsensheffy:7',
                     'gives you... HornPub* a cookie :biblethump:',
+                    'gives you a cookie. But your browser doesnt accept any.',
                 ],
                 getCookie: function () {
                     var c = Math.floor(Math.random() * 5);
