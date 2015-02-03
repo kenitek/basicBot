@@ -1595,7 +1595,7 @@
                     'gives you a cookie. it reads "sex me"',
                     'bakes a cookie, it\'s for Darude :canyounot::kolentosniperino:',
                     'gives you a cookie. It reads :wuotm8:',
-                    'gives you a cookie. it reads "rip :nipaface:"',
+                    'gives you a cookie. it reads "rip :nipaface:',
                     'gives you a cookie. It reads "1v1 me rust"',
                     'gives you a cookie. It got taken away by the Nazis :forsensheffy:7',
                     'gives you... HornPub* a cookie :biblethump:',
